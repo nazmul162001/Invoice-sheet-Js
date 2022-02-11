@@ -89,9 +89,9 @@ function totalCalculation() {
   let tax = subtotal * .2;
   document.getElementById('tax').innerText = tax.toFixed(2);
   // for grand total 
-  document.getElementById('grand-total').innerText = subtotal + tax;
+  document.getElementById('grand-total').innerText = subtotal - tax;
   // for grand total 2 
-  document.getElementById('grand-total-2').innerText = subtotal + tax;
+  document.getElementById('grand-total-2').innerText = subtotal - tax;
 }
 
 // empty value 
