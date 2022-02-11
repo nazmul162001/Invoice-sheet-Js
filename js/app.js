@@ -7,11 +7,6 @@ document.getElementById('add-details-btn').addEventListener('click', ()=>{
   document.getElementById('buyer-info').innerText = getBuyerDetails.value;
 
 
-  // empty value 
-  // getBuyerDetails.value = '';
-  emptyValue('buyer-details-input');
-
-
   // get user info id 
   const itemName = document.getElementById('item-name-input');
   const itemPrice = document.getElementById('item-price-input');
@@ -50,6 +45,12 @@ infoTable.appendChild(tr);
 
 // get total calculation from function 
 totalCalculation();
+
+  // empty value 
+  emptyValue('buyer-details-input');
+  emptyValue('item-name-input');
+  emptyValue('item-price-input');
+  emptyValue('item-quantity-input');
 })
 
 
