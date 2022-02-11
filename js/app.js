@@ -3,17 +3,27 @@
 
 document.getElementById('add-details-btn').addEventListener('click', ()=>{
   // for buyer name details 
-  const getBuyerDetails = document.getElementById('buyer-details-input');
-  document.getElementById('buyer-info').innerText = getBuyerDetails.value;
+const getBuyerDetails = document.getElementById('buyer-details-input');
+document.getElementById('buyer-info').innerText = getBuyerDetails.value;
 
 
   // get user info id 
-  const itemName = document.getElementById('item-name-input');
-  const itemPrice = document.getElementById('item-price-input');
-  const itemQuantity = document.getElementById('item-quantity-input');
+const itemName = document.getElementById('item-name-input');
+const itemPrice = document.getElementById('item-price-input');
+const itemQuantity = document.getElementById('item-quantity-input');
 
-  const totalPrice = parseInt(itemPrice.value) * parseInt(itemQuantity.value);
+// Simple Validation 
+ if (itemName.value == '' || itemPrice.value<0 || itemQuantity.value<0||itemPrice.value =='' || itemQuantity.value=="") {
+   alert('Please Input valid information');
+   emptyValue('buyer-details-input');
+   emptyValue('item-name-input');
+   emptyValue('item-price-input');
+   emptyValue('item-quantity-input');
+   return;
+ }
 
+// get total Price 
+const totalPrice = parseInt(itemPrice.value) * parseInt(itemQuantity.value);
 
 // creat table info 
 const tr = document.createElement('tr');
