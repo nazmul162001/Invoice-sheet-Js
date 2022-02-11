@@ -1,0 +1,58 @@
+
+body {
+  font-family: "Poppins", sans-serif !important;
+ }
+
+.color-1 {
+    background-color: #001233;
+    color: whitesmoke !important;
+}
+.color-2 {
+    background-color: #001845;
+}
+.color-3 {
+    background-color: #0353a4
+}
+
+.color-4 {
+    background-color: #023e7d;
+    color: white
+}
+/* .shadow-color-4{
+border-radius: 10px;
+background: #023e7d;
+box-shadow: inset 7px 7px 14px #012346,
+        inset -7px -7px 14px #0359b4;
+} */
+.input-card {
+            /* border: 5px solid #002855;
+            border-radius: 10px; */
+            
+border-radius: 10px;
+background: #002855;
+box-shadow: inset 7px 7px 14px #001630,
+        inset -7px -7px 14px #003a7a;
+        }
+
+.print-button,
+.download-button {
+color: #1D9AF2;
+background-color: #292D3E;
+border: 1px solid #1D9AF2;
+border-radius: 4px;
+padding: 0 15px;
+cursor: pointer;
+height: 32px;
+font-size: 14px;
+transition: all 0.2s ease-in-out;
+}
+
+.print-button:hover {
+box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
+transform: translateX(-3px);
+}
+
+.download-button:hover {
+box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
+transform: translateX(-3px);
+}
