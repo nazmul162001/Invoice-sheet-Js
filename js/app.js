@@ -1,12 +1,3 @@
-// document.getElementById('detail-submit-btn').addEventListener('click', () =>{
-//   const getBuyerDetails = document.getElementById('buyer-details-input');
-//   document.getElementById('buyer-info').innerText = getBuyerDetails.value;
-
-
-//   // empty value 
-//   getBuyerDetails.value = '';
-// })
-
 
 // get user Product price & quantity 
 
@@ -17,7 +8,8 @@ document.getElementById('add-details-btn').addEventListener('click', ()=>{
 
 
   // empty value 
-  getBuyerDetails.value = '';
+  // getBuyerDetails.value = '';
+  emptyValue('buyer-details-input');
 
 
   // get user info id 
@@ -89,4 +81,9 @@ function totalCalculation() {
   document.getElementById('grand-total').innerText = subtotal + tax;
   // for grand total 2 
   document.getElementById('grand-total-2').innerText = subtotal + tax;
+}
+
+// empty value 
+function emptyValue(id) {
+  document.getElementById(id).value = '';
 }
